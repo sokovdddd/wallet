@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100vh;
+    width: 100%;
+}
+.block{
+    background-color: gray;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.diagram {
+    width: 19%;
+    height: 90%;
+}
+.diagram__name{
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+}
+.diagram__visible {
+}
+.diagram__comp {
+}
+.expenes__list {
+    width: 59%;
+    height: 90%;
+}
+.expenes__name {
+}
+.expenes {
+}
+.product__create {
+    width: 19%;
+    height: 90%;
+}
+.product__name {
+}
+.product__price {
+}
+.product__class {
+}
+.product__add {
+}
