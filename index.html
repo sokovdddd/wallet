@@ -2,30 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <p class="title">WALLET</p>
     <div class="main">
         <div class="diagram block">
             <p class="diagram__name">Диаграмма расходов</p>
-            <div class="diagram__visible"></div>
-            <div class="diagram__comp"></div>
+            <div class="diagram__wrap">
+                <div class="diagram__visible"></div>
+                <div class="diagram__comp">
+                    <div class="comp__product-product comp__product">
+                        <div class="comp__wrap">
+                            <div class="comp__product-color"></div>
+                            <p class="comp__product-name">Продукты</p>
+                        </div>
+                        <p class="comp__product-price cp"></p>
+                    </div>
+                    <div class="comp__product-fastfood comp__product">
+                        <div class="comp__wrap">
+                            <div class="comp__product-color"></div>
+                            <p class="comp__product-name">ФастФуд</p>
+                        </div>
+                        <p class="comp__fastfood-price cp">2000</p>
+                    </div>
+                    <div class="comp__product-sport comp__product">
+                        <div class="comp__wrap">
+                            <div class="comp__product-color"></div>
+                            <p class="comp__product-name">Спорт</p>
+                        </div>
+                        <p class="comp__sport-price cp">2000</p>
+                    </div>
+                    <div class="comp__product-drinks comp__product">
+                        <div class="comp__wrap">
+                            <div class="comp__product-color"></div>
+                            <p class="comp__product-name">Напитки</p>
+                        </div>
+                        <p class="comp__drinks-price cp">2000</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="expenes__list block">
-            <div class="expenes__name"></div>
-            <tr class="expenes">
+            <div class="expenes__list-name">
+                
+                <p class="expenes__category-name">НАИМЕНОВАНИЕ</p>
+                <p class="expenes__category-name">КАТЕГОРИЯ</p>
+                <p class="expenes__category-name">ЦЕНА</p>
+            </div>
+            <table class="table">
+                <tbody>
 
-            </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="product__create block">
-            <div class="product__name"></div>
-            <div class="product__price"></div>
-            <div class="product__class"></div>
-            <button class="product__add"></button>
-        </div>
+        <form class="product__create block">
+            <div class="product__name pr-cr__block">
+                <p class="pr__name">Товар:</p>
+                <input name="name" type="text">
+            </div>
+            <div class="product__price pr-cr__block">
+                <p class="pr__name">Цена:</p>
+                <input name="price" type="number">
+
+            </div>
+            <div class="product__class pr-cr__block">
+                <p class="pr__name">Категория:</p>
+                <select name="category" id="">
+                    <option name='opt' value="">Продукты</option>
+                    <option value="">ФастФуд</option>
+                    <option value="">Спорт</option>
+                    <option value="">Напитки</option>
+                </select>
+            </div>
+            <button class="submit__button" name="addbutton" type="submit">Добавить</button>
+        </form>
     </div>
     
     

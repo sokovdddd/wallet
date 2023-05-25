@@ -1,11 +1,44 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
     color: white;
+    background-color: black;
+    font-family: 'Arimo', sans-serif
 }
 p{
     margin: 0;
     padding: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input{
+    color: lightgray;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+select{
+    width: 100%;
+    background-color: aliceblue;
+    outline: none;
+    height: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.title{
+    position: absolute;
+    margin: 15px;
+    font-size: 30px;
 }
 .main{
     display: flex;
@@ -15,6 +48,7 @@ p{
     width: 100%;
 }
 .block{
+    padding: 12px;
     background-color: gray;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -22,31 +56,140 @@ p{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    height: 87%;
 }
 .diagram {
     width: 19%;
-    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.diagram__wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .diagram__name{
     text-align: center;
     font-size: 25px;
-    margin: 15px;
+    margin-bottom: 35px;
 }
 .diagram__visible {
+    width: 100%;
+    height: 60%;
+    background-color: red;
 }
 .diagram__comp {
+    width: 100%;
+    margin-top: 40px;
+}
+.comp__product{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: rgb(29, 29, 29);
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.comp__wrap{
+    display: flex;
+    align-items: center;
+}
+.comp__product-name{
+    margin-left: 8px;
+}
+.comp__product-color{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cp{
+    display: flex;
+    align-items: center;
+}
+.comp__product-fastfood .comp__product-color{
+    background-color: orange;
+}
+.comp__product-product .comp__product-color{
+    background-color: green;
+}
+.comp__product-drinks .comp__product-color{
+    background-color: pink;
+}
+.comp__product-sport .comp__product-color{
+    background-color: rgb(0, 191, 255);
 }
 .expenes__list {
     width: 59%;
-    height: 90%;
 }
-.expenes__name {
+.expenes__list-name {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 10px;
 }
-.expenes {
+.expenes__category-name {
+    font-size: 18px;
+}
+.exp__img{
+    height: 25px;
+}
+table{
+    width: 100%;
+}
+table tr{
+    margin-bottom: 5px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    border-radius: 6px;
+    background-color: rgb(29, 29, 29);
+    height: 50px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.exp__obj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    color: white;
+    height: 100%;
+    width: 100px;
+}
+.expenes__category-name:first-child{
+    margin-left: 50px;
 }
 .product__create {
+    padding: 20px;
     width: 19%;
-    height: 90%;
+}
+.pr-cr__block{
+    margin-bottom: 15px;
+}
+.pr__name{
+    margin-bottom: 5px;
 }
 .product__name {
 }
@@ -54,5 +197,16 @@ p{
 }
 .product__class {
 }
-.product__add {
+.submit__button{
+    width: 45%;
+    height: 35px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 16px;
 }
